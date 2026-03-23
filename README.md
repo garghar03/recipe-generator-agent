@@ -8,7 +8,8 @@ A modern, interactive web application powered by OpenAI GPT models for generatin
 - **🎨 Adjustable Creativity**: Control temperature (0.0-1.0) for recipe creativity
 - **🌍 Cuisine Selection**: Generate recipes for specific cuisines (Italian, Mexican, Chinese, etc.)
 - **🎯 Ingredient-Based**: Input your available ingredients for personalized recipes
-- **💻 Modern Web UI**: Clean, responsive interface with real-time feedback
+- **⚛️ React Frontend**: Interactive React-based UI with dynamic ingredient tags and live controls
+- **🖼️ Food-Themed Visuals**: Sleek right-side panel and background with food-inspired imagery
 - **🔒 Secure**: Environment variables properly configured and gitignored
 
 ## 🚀 Quick Start
@@ -54,11 +55,18 @@ Open your browser to `http://127.0.0.1:8000`
 
 ## 📝 How It Works
 
-1. **Input Ingredients**: Enter comma-separated ingredients you have available
+1. **Add Ingredients**: Enter ingredients one-by-one and manage them as removable tags
 2. **Choose Cuisine**: Select a cuisine type or leave as "Any"
 3. **Select AI Model**: Pick your preferred GPT model based on speed vs. capability
 4. **Adjust Creativity**: Use the temperature slider (0.0 = focused, 1.0 = creative)
 5. **Generate Recipe**: Click the button to get a complete recipe with instructions!
+
+## ⚛️ React UI Upgrade
+
+- The frontend now renders through React in `static/js/app.jsx`.
+- FastAPI still serves the app from `templates/index.html` and handles `/generate-recipe`.
+- React and ReactDOM are loaded from CDN in the template for a lightweight setup (no Node build step required).
+- Legacy vanilla DOM script has been removed.
 
 ## 🔧 Configuration Options
 
@@ -79,12 +87,15 @@ Open your browser to `http://127.0.0.1:8000`
 recipe-generator-agent/
 ├── app.py                 # FastAPI backend with OpenAI integration
 ├── templates/
-│   └── index.html         # Main web interface
+│   └── index.html         # HTML shell + React mount point
 ├── static/
 │   ├── css/
-│   │   └── style.css      # UI styling
+│   │   └── style.css      # UI styling and layout theme
+│   ├── images/
+│   │   ├── food-hero.svg  # Food-themed visual asset
+│   │   └── recipe-bg.svg  # Supporting illustration asset
 │   └── js/
-│       └── script.js      # Frontend JavaScript
+│       └── app.jsx        # React application UI logic
 ├── requirements.txt       # Python dependencies
 ├── .env.example          # Environment variables template
 ├── .gitignore           # Git ignore rules
@@ -120,4 +131,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Built with ❤️ using FastAPI, OpenAI GPT, and modern web technologies**
+**Built with ❤️ using FastAPI, React, OpenAI GPT, and modern web technologies**
