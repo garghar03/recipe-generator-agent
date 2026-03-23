@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Generator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍳 Recipe Generator</h1>
+        <form id="recipeForm">
+            <div class="form-group">
+                <label for="ingredients">Ingredients (comma-separated):</label>
+                <input type="text" id="ingredients" placeholder="e.g., chicken, rice, vegetables" required>
+            </div>
+            <div class="form-group">
+                <label for="cuisine">Cuisine Type:</label>
+                <select id="cuisine">
+                    <option value="any">Any</option>
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="indian">Indian</option>
+                    <option value="french">French</option>
+                    <option value="japanese">Japanese</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="model">GPT Model:</label>
+                <select id="model">
+                    <option value="gpt-4o-mini">GPT-4o Mini (Fast & Efficient)</option>
+                    <option value="gpt-4o">GPT-4o (Balanced)</option>
+                    <option value="gpt-4">GPT-4 (Most Capable)</option>
+                    <option value="gpt-3.5-turbo">GPT-3.5 Turbo (Fastest)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="temperature">Creativity Level (Temperature): <span id="tempValue">0.7</span></label>
+                <input type="range" id="temperature" min="0.0" max="1.0" step="0.1" value="0.7">
+                <div style="display: flex; justify-content: space-between; font-size: 12px; color: #666; margin-top: 5px;">
+                    <span>Focused</span>
+                    <span>Creative</span>
+                </div>
+            </div>
+            <button type="submit" id="generateBtn">
+                Generate Recipe
+            </button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
