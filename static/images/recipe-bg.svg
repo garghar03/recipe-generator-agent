@@ -1,0 +1,53 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.55" stop-color="#1E3A8A"/>
+      <stop offset="1" stop-color="#0F4C81"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(320 240) rotate(30) scale(450 340)">
+      <stop stop-color="#60A5FA" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1290 780) rotate(5) scale(420 300)">
+      <stop stop-color="#22D3EE" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softBlur" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#base)"/>
+  <ellipse cx="320" cy="240" rx="430" ry="320" fill="url(#glowA)"/>
+  <ellipse cx="1290" cy="780" rx="400" ry="280" fill="url(#glowB)"/>
+
+  <g opacity="0.16" stroke="#BFDBFE" stroke-width="10" stroke-linecap="round" filter="url(#softBlur)">
+    <path d="M166 792C256 686 374 650 518 684C620 708 721 702 830 662"/>
+    <path d="M980 248C1074 182 1184 164 1318 214C1394 244 1468 258 1536 254"/>
+  </g>
+
+  <g opacity="0.18" fill="none" stroke="#E0F2FE" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" transform="translate(1110 110)">
+    <path d="M74 42C71 32 64 24 55 20C46 16 36 17 28 22C20 27 15 36 15 45C15 54 20 63 28 68C36 73 46 74 55 70C64 66 71 58 74 48H105C123 48 138 63 138 81V86"/>
+    <path d="M46 86H130"/>
+  </g>
+
+  <g opacity="0.14" fill="none" stroke="#DBEAFE" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" transform="translate(120 170)">
+    <path d="M46 22L84 60"/>
+    <path d="M82 20L44 58"/>
+    <path d="M108 8L154 54"/>
+    <path d="M154 8L108 54"/>
+  </g>
+
+  <g opacity="0.16" fill="none" stroke="#BAE6FD" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" transform="translate(1260 560)">
+    <path d="M18 16H226"/>
+    <path d="M44 58H200"/>
+    <path d="M72 100H172"/>
+  </g>
+
+  <g opacity="0.2" fill="none" stroke="#93C5FD" stroke-width="8" transform="translate(560 390)">
+    <circle cx="128" cy="128" r="118"/>
+    <circle cx="128" cy="128" r="86"/>
+    <circle cx="128" cy="128" r="52"/>
+  </g>
+</svg>

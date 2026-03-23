@@ -1,0 +1,48 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F241C"/>
+      <stop offset="1" stop-color="#6C5440"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(760 460) rotate(90) scale(460 620)">
+      <stop stop-color="#FFE6C4" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#FFE6C4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="1000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <ellipse cx="760" cy="460" rx="620" ry="430" fill="url(#light)"/>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="800" cy="540" rx="330" ry="230" fill="#FDF4E7"/>
+    <ellipse cx="800" cy="540" rx="285" ry="190" fill="#FFFDF8"/>
+
+    <ellipse cx="690" cy="520" rx="70" ry="52" fill="#9BC15D"/>
+    <ellipse cx="768" cy="500" rx="66" ry="48" fill="#86B44D"/>
+    <ellipse cx="742" cy="562" rx="74" ry="54" fill="#A5C768"/>
+
+    <ellipse cx="900" cy="525" rx="66" ry="48" fill="#F29A3D"/>
+    <ellipse cx="948" cy="575" rx="58" ry="44" fill="#E47F2E"/>
+
+    <ellipse cx="820" cy="465" rx="42" ry="34" fill="#D4473C"/>
+    <ellipse cx="872" cy="470" rx="40" ry="32" fill="#C9372D"/>
+
+    <ellipse cx="736" cy="470" rx="16" ry="14" fill="#F9F5E8"/>
+    <ellipse cx="928" cy="490" rx="14" ry="12" fill="#F9F5E8"/>
+    <ellipse cx="845" cy="600" rx="15" ry="13" fill="#F9F5E8"/>
+  </g>
+
+  <g opacity="0.28" stroke="#E7D6BF" stroke-width="10" stroke-linecap="round">
+    <path d="M250 810C390 710 550 680 710 720"/>
+    <path d="M940 330C1070 260 1220 250 1360 300"/>
+  </g>
+
+  <g opacity="0.9" fill="#FFE6C4">
+    <circle cx="200" cy="190" r="7"/>
+    <circle cx="1380" cy="170" r="6"/>
+    <circle cx="1310" cy="860" r="8"/>
+  </g>
+</svg>
